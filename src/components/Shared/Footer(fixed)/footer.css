@@ -3,7 +3,7 @@
 	footer{
 		bottom: 0;
 		position:fixed;
-		height: 5.5rem;
+		height: 7.0rem;
 		background-color: #064b04;
 		z-index: 5;
 		left: 0.0rem;
@@ -11,6 +11,7 @@
 	  }
 	  .Footer-Site-Title{
 		text-align: center;
+		padding-top: 10px;
 	  }
 	  
 	  .Department-Footer-Name{
