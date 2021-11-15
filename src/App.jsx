@@ -12,7 +12,7 @@ import NavBar from './components/misc/Navigation';
 
 import About from './components/About/about';
 import Schedule from './components/Schedule/schedule'
-import Society from './components/Society/society';
+import Contact from './components/Contact/contact';
 import MainBody from './components/HomePage/MainBody/mainBody';
 
 
@@ -38,7 +38,7 @@ const App =({location,isAuthenticated}) => (
             <GuestRoute location={location} path="/" exact component={MainBody} />
             <GuestRoute location={location} path="/about" exact component={About} />
             <GuestRoute location={location} path="/agendamento" exact component={Schedule} />           
-            <GuestRoute location={location} path="/contact" exact component={Society} />
+            <GuestRoute location={location} path="/contact" exact component={Contact} />
 
             {/* <UserRoute location={location} path="/home" exact component={MainBody} />
             <UserRoute location={location} path="/about" exact component={About} />

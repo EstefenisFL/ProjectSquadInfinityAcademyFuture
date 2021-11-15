@@ -3,7 +3,7 @@ import facultyList from './facultyList';
 import FacultyCard from './FacultyCard';
 import ContatoForm from '../../forms/ContatoForm';
 
-class SocietyMain extends React.Component{
+class ContactMain extends React.Component{
     constructor(){
         super()
         this.state = {
@@ -30,4 +30,4 @@ class SocietyMain extends React.Component{
     }
 }
 
-export default SocietyMain;
+export default ContactMain;
