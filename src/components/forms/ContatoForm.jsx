@@ -20,7 +20,7 @@ class ContatoForm extends Component{
     }
     onChange = (e) =>{
         this.setState({
-            data:{...this.state.data,[e.target.name]: e.target.value [e.target.contact]}
+            data:{...this.state.data,[e.target.name]:e.target.value[e.target.contact]}
         })
     }
     onSubmit = () =>{

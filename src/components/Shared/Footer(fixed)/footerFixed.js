@@ -4,21 +4,19 @@ import './footer.css';
 class Footer extends React.Component {
 	render() {
 		return (
-			<header>
-				<div className="Header-Site-Title">
-					<img className = "Header-logo" src={logo} alt = ""/>
-					
-					<div className="Department-Name">
-						<h1 >
-							<b>Academia Saúde Mais</b>
+			<footer>
+				<div className="Footer-Site-Title">
+					<div className="Department-Footer-Name">
+                        <h1 >
+							<b>Iniciativa Atlântico - Academy Future</b>
 							<br/>
 						</h1>
 						<h3>
-							Um jeito todo diferente de ajudar a cuidar da sua saúde
-						</h3>					
-					</div>			
+						  © Academia Saúde Mais 2021. Design Development by <a href="https://github.com/EstefenisFL/ProjectSquadInfinityAcademyFuture" target="_blank">Squad Infinity</a>
+						</h3>
+                    </div>			
 				</div>
-			</header>
+			</footer>
 		);
 	}
 }

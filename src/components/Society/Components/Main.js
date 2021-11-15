@@ -12,7 +12,6 @@ class SocietyMain extends React.Component{
     }
     render()
     {
-        const facultyData = this.state.data.map(item => <FacultyCard key={item.name} item={item}/>)
         return (
             <main className='Society-main'>
                 <div className='Society-Heading'>
