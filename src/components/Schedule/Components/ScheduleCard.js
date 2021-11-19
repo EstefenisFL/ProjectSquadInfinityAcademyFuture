@@ -9,7 +9,6 @@ function ScheduleCard(props){
                 <p>
                     <span className="email">{props.item.email} </span>
                     <span className="phone">{props.item.phone}</span>
-                    <span className="schedule">{props.item.scheduling}</span>
                 </p>
             </div>
         </div>
