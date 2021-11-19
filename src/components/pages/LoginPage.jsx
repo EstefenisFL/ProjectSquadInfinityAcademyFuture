@@ -7,6 +7,7 @@ import {login} from '../../actions/auth';
 import './LoginPage.css';
 import Header from '../Shared/Header(fixed)/headerFixed';
 import TopMenu from '../Shared/topMenu';
+import Footer from '../Shared/Footer(fixed)/footerFixed';
 
 class LoginPage extends Component{
 
@@ -24,6 +25,7 @@ class LoginPage extends Component{
             <div className = "Login-Page-Body">
                 <Header/>
                 <TopMenu/>
+                <Footer/>
                 <div className = "Login-Page-Head">
                 <h1 className = "Login-title">Login Page</h1>
                 <LoginForm submit={this.submit}/><br/>
