@@ -1,23 +1,22 @@
 'use strict';
 var dbConn = require('./../../config/db.config');
+
 //aluno object create
 var Aluno = function (aluno) {
-    this.nome = aluno.aluno_nome;
-    this.idade = aluno.aluno_idade;
-    this.sexo = aluno.aluno_sexo;
-    this.endereco = aluno.aluno_endereco;
-    this.cpf = aluno.aluno_cpf;
-    this.rg = aluno.aluno_rg;
-    this.data_nasc = aluno.aluno_data_nasc;
-    this.tel = aluno.aluno_tel;
-    this.id_plano = aluno.plano_id_plano;
+    this.aluno_nome = aluno.aluno_nome;
+    this.aluno_idade = aluno.aluno_idade;
+    this.aluno_sexo = aluno.aluno_sexo;
+    this.aluno_endereco = aluno.aluno_endereco;
+    this.aluno_cpf = aluno.aluno_cpf;
+    this.aluno_rg = aluno.aluno_rg;
+    this.aluno_data_nasc = aluno.aluno_data_nasc;
+    this.aluno_tel = aluno.aluno_tel;
+    this.plano_id_plano = aluno.plano_id_plano;
     this.status_id_status = aluno.status_id_status;
-    this.id_aluno = aluno.id_aluno;
-
 };
 
 Aluno.create = function (newAluno, result) {
-    dbConn.query("INSERT INTO aluno set ?", newAluno, function (err, res) {
+    dbConn.query("INSERT INTO saudemais.aluno set ?", newAluno, function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(err, null);
@@ -29,8 +28,9 @@ Aluno.create = function (newAluno, result) {
     });
 };
 
+//funcionando
 Aluno.findById = function (id, result) {
-    dbConn.query("Select * from aluno where id = ? ", id, function (err, res) {
+    dbConn.query("select * from saudemais.aluno where id_aluno = ? ", id, function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(err, null);
@@ -41,8 +41,9 @@ Aluno.findById = function (id, result) {
     });
 };
 
+//funcionando
 Aluno.findAll = function (result) {
-    dbConn.query("Select * from aluno", function (err, res) {
+    dbConn.query("select * from saudemais.aluno", function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(null, err);

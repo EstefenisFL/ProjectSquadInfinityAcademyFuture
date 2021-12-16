@@ -3,11 +3,16 @@ const mysql = require('mysql');
 
 //local mysql db connection
 const dbConn = mysql.createConnection({
-  host: 'www.mysql.academiasaudemais.com.br',
-  port: 3008,
-  user: 'saudemais',
-  password: 'saudemais',
-  database: 'saudemais'
+  // host: '166.48.214.158',
+  // port: '3306',
+  // user: 'saudemais',
+  // password: 'saudemais',
+  // database: 'saudemais'
+  host: 'localhost',
+  port: '3306',
+  user: 'root',
+  password: 'root',
+  //database: 'saudemais'
 });
 
 dbConn.connect(function (err) {
