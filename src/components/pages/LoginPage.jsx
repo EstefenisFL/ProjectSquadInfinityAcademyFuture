@@ -29,7 +29,7 @@ class LoginPage extends Component{
                 <div className = "Login-Page-Head">
                 <h1 className = "Login-title">Login Page</h1>
                 <LoginForm submit={this.submit}/><br/>
-                <div className = "To-signup">Don't have an account? <Link to="/signup">Sign up here</Link></div>
+                <div className = "To-signup">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
                 </div>
             </div>
         )
