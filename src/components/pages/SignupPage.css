@@ -1,0 +1,14 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Signup-main{
+    width: 130vw;
+    height: 50vw;
+    background-color: #053C5E;
+    margin-top: 8vw;
+  }
+  .Signup-Content{
+
+  }
+
+
+}

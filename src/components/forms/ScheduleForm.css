@@ -1,0 +1,23 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Schedule-Form {
+    width: 50vw;
+     padding-top: 1vw;
+  }
+  #email{
+    width: 10vw;
+  }
+  .Enviar mensagem-Button {
+    margin-left: 7vw;
+  }
+
+  #email{
+    width: 10vw;
+  }
+  #username{
+    width: 10vw;
+  }
+  #contact{
+    width: 10vw;
+  }
+}

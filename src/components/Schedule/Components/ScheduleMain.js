@@ -1,8 +1,9 @@
 import React from 'react';
 import scheduleList from './scheduleList';
 import ScheduleCard from './ScheduleCard';
-import Calendar from './Calendar';
 import CalendarApp from './Calendar';
+import ScheduleForm from '../../forms/ScheduleForm';
+import {Link} from 'react-router-dom';
 
 class ScheduleMain extends React.Component{
     constructor(){
@@ -21,10 +22,17 @@ class ScheduleMain extends React.Component{
                     <h2>Agendamento</h2>
                     <hr />
                 </div>
-                           
+                         
                 <div className='Schedule-Context' >
-                    <div className='Schedule-Calendar'>
-                        <CalendarApp/>     
+                    <div className= 'Schedule-Content'>
+                        <div className='Schedule-Calendar'>
+                            <CalendarApp/>     
+                        </div>
+                        <div className='Schedule-Form-Content'>
+                            <ScheduleForm submit={this.submit}/><br/>
+                            <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link>
+                            </div>                        
+                        </div> 
                     </div>
                 </div>
             </main>

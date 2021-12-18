@@ -22,16 +22,15 @@
   /****************************/
 
   .Schedule-Context {
-    padding-top: 10vw;
     margin-left: 50vw;
     background: url('../images/yoga-3053487.jpg');
-    background-size:67%;
+    background-size:70%;
     background-repeat: no-repeat;    
-    background-position-x: 5vw;
     background-position-y: 5vw;
     background-attachment: scroll;
     width: 110vw;
-    height: 41vw;
+    height: 45vw;
+    display: inline-flex;
   }
 
   .Schedule-Detail-part {
@@ -50,13 +49,13 @@
   }
 
   .Schedule-Calendar {
-    margin-left: 5.5vw;
-    width: 20vw;
-
+   opacity: 1;
+   margin-left: -4vw;
   }
 
   .react-calendar {
     border-radius: 10px;
+    opacity: 0.8;
 
   }
   .react-calendar__month-view__weekdays {
@@ -65,5 +64,26 @@
     font-weight: bold;
     font-size: 0.75em;
     color:black;
+  }
+
+  .Schedule-Form-Content{
+    margin-left: 5vw;
+    background-color: #053c5e;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-top: 1vw;
+    height: 36vw;
+    opacity: 0.9;
+  }
+  .Schedule-Content{
+    display: inline-flex;
+    padding-top: 8vw;
+    margin-left: 10vw;
+
+  }
+  .To-Signup-Schedule{
+    margin-left: 3vw;
   }
 }
