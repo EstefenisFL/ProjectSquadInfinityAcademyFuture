@@ -1,7 +1,6 @@
 'use strict';
 var dbConn = require('./../../config/db.config');
 
-//aluno object create
 var Aluno = function (aluno) {
     this.aluno_nome = aluno.aluno_nome;
     this.aluno_idade = aluno.aluno_idade;
@@ -28,7 +27,7 @@ Aluno.create = function (newAluno, result) {
     });
 };
 
-//funcionando
+
 Aluno.findById = function (id, result) {
     dbConn.query("select * from saudemais.aluno where id_aluno = ? ", id, function (err, res) {
         if (err) {
@@ -41,7 +40,6 @@ Aluno.findById = function (id, result) {
     });
 };
 
-//funcionando
 Aluno.findAll = function (result) {
     dbConn.query("select * from saudemais.aluno", function (err, res) {
         if (err) {
@@ -55,19 +53,37 @@ Aluno.findAll = function (result) {
     });
 };
 
-// Aluno.update = function (id, aluno, result) {
-//     dbConn.query("UPDATE aluno SET first_name=?,last_name=?,email=?,phone=?,organization=?,designation=?,salary=? WHERE id = ?", [employee.first_name, employee.last_name, employee.email, employee.phone, employee.organization, employee.designation, employee.salary, id], function (err, res) {
-//         if (err) {
-//             console.log("error: ", err);
-//             result(null, err);
-//         } else {
-//             result(null, res);
-//         }
-//     });
-// };
+Aluno.update = function (id, aluno, result) {
+    console.log(aluno);
+    console.log(id);
+    const sql = `UPDATE
+                    saudemais.aluno
+                SET
+                    aluno_nome=?,
+                    aluno_idade=?,
+                    aluno_sexo=?, 
+                    aluno_endereco=?, 
+                    aluno_cpf=?, 
+                    aluno_rg=?, 
+                    aluno_data_nasc=?, 
+                    aluno_tel=?, 
+                    plano_id_plano=?, 
+                    status_id_status=? 
+                WHERE 
+                    id_aluno=?`
+    dbConn.query(sql, [aluno.aluno_nome, aluno.aluno_idade, aluno.aluno_sexo, aluno.aluno_endereco, aluno.aluno_cpf, aluno.aluno_rg, aluno.aluno_data_nasc, aluno.aluno_tel, aluno.plano_id_plano, aluno.status_id_status, id], function (err, res) {
+        if (err) {
+            console.log("error: ", err);
+            result(null, err);
+        } else {
+            result(null, res);
+            console.log(res);
+        }
+    });
+};
 
 Aluno.delete = function (id, result) {
-    dbConn.query("DELETE FROM aluno WHERE id = ?", [id], function (err, res) {
+    dbConn.query("DELETE FROM saudemais.aluno WHERE id_aluno = ?", [id], function (err, res) {
         if (err) {
             console.log("error: ", err);
             result(null, err);

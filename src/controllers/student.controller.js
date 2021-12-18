@@ -3,7 +3,6 @@ const Aluno = require('../models/student.model');
 
 exports.findAll = function (req, res) {
     Aluno.findAll(function (err, aluno) {
-        console.log('controller')
         if (err)
             res.send(err);
         console.log('res', aluno);
@@ -13,7 +12,6 @@ exports.findAll = function (req, res) {
 
 exports.create = function (req, res) {
     const new_student = new Aluno(req.body);
-    //handles null error
     if (req.body.constructor === Object && Object.keys(req.body).length === 0) {
         res.status(400).send({ error: true, message: 'Please provide all required field' });
     } else {
@@ -40,7 +38,7 @@ exports.update = function (req, res) {
         Aluno.update(req.params.id, new Aluno(req.body), function (err, aluno) {
             if (err)
                 res.send(err);
-            res.json({ error: false, message: 'Student successfully updated' });
+            res.json({ error: false, message: 'Student successfully updated', data: aluno });
         });
     }
 };
