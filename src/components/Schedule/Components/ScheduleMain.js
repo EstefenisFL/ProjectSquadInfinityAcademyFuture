@@ -1,6 +1,8 @@
 import React from 'react';
 import scheduleList from './scheduleList';
 import ScheduleCard from './ScheduleCard';
+import Calendar from './Calendar';
+import CalendarApp from './Calendar';
 
 class ScheduleMain extends React.Component{
     constructor(){
@@ -19,11 +21,10 @@ class ScheduleMain extends React.Component{
                     <h2>Agendamento</h2>
                     <hr />
                 </div>
-                    
-                
+                           
                 <div className='Schedule-Context' >
-                    <div className='Schedule-Content'>
-                        {scheduleData}
+                    <div className='Schedule-Calendar'>
+                        <CalendarApp/>     
                     </div>
                 </div>
             </main>
