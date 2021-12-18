@@ -2,8 +2,12 @@
 /************* For Main Tag*************/
 
 @media only screen and (min-width: 1200px) {
-  main {
-    height: 100vh;
+  Schedule-main {
+    top: 5;
+    margin-top: 12.8vh;
+    display: flex;
+    justify-content: flex-start;
+    height: 175vh;
   }
 
   .Schedule-Heading {
@@ -18,28 +22,53 @@
     position: fixed;
     left: 0;
   }
- 
+  .Schedule-Heading h2 {
+    width: 100%;
+    padding: auto;
+    text-align: center;
+  }
+
+  .Schedule-Heading hr {
+    width: 70%;
+    display: block;
+  }
   /****************************/
 
   .Schedule-Context {
     padding-top: 10vw;
     margin-left: 50vw;
     background: url('../images/yoga-3053487.jpg');
-    background-size:67%;
+    background-size:70%;
     background-repeat: no-repeat;    
-    background-position-x: 5vw;
-    background-position-y: 5vw;
-    background-attachment: scroll;
-    width: 110vw;
-    height: 41vw;
+    background-position: right;
+    background-attachment:fixed;
+    width: 80vw;
+    height: 47vw;
+  }
+
+  .Schedule-Content-elements {
+    height: 40vh;
+    width: 80%;
+    display: flex;
+    /*border-bottom: solid 2px#EF494E;*/
+    color: white;
+    justify-content: center;
+    margin-left: 150px;
+    padding-top: 30px;
+    padding-bottom: 180px;
+    top: 5;
+    margin-bottom: 6rem;
+  }
+
+  .Schedule-Content-elements:first-child {
+    margin-top: 15vh;
   }
 
   .Schedule-Detail-part {
     width: 80%;
     font-size: 15px;
     line-height: 5px;
-    color:black;
-    margin-left: 30vw;
+    color:black
   }
   .email {
     float: left;
@@ -47,23 +76,5 @@
 
   .phone {
     float: right;
-  }
-
-  .Schedule-Calendar {
-    margin-left: 5.5vw;
-    width: 20vw;
-
-  }
-
-  .react-calendar {
-    border-radius: 10px;
-
-  }
-  .react-calendar__month-view__weekdays {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 0.75em;
-    color:black;
   }
 }

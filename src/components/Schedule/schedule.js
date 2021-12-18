@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../Shared/Header(fixed)/headerFixed';
 import TopMenu from '../Shared/topMenu/index';
-import ScheduleMain from './Components/ScheduleMain';
+import ScheduleMain from './Components/Main';
 import './schedule.css';
 import Footer from '../Shared/Footer(fixed)/footerFixed';
 
