@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Form, Button, Message} from 'semantic-ui-react';
 import InlineError from '../misc/InlineError';
 import './ScheduleForm.css';
+import {Link} from 'react-router-dom';
 
 class ScheduleForm extends Component{
     constructor(props){
@@ -95,6 +96,7 @@ class ScheduleForm extends Component{
                     {this.state.errors.contact && <InlineError text={this.state.errors.contact}/>}
                 </Form.Field>
                 <Button primary className = "Schedule-Button" style={{marginLeft: "8vw"}}>Login</Button>
+                <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
             </Form>
         );
     }

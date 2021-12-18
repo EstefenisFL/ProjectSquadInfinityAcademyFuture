@@ -23,7 +23,7 @@
 
   .Schedule-Context {
     margin-left: 50vw;
-    background: url('../images/yoga-3053487.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     background-size:70%;
     background-repeat: no-repeat;    
     background-position-y: 5vw;
@@ -68,12 +68,10 @@
 
   .Schedule-Form-Content{
     margin-left: 5vw;
-    background-color: #053c5e;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
-    padding-top: 1vw;
     height: 36vw;
     opacity: 0.9;
   }
@@ -81,9 +79,5 @@
     display: inline-flex;
     padding-top: 8vw;
     margin-left: 10vw;
-
-  }
-  .To-Signup-Schedule{
-    margin-left: 3vw;
   }
 }

@@ -1,8 +1,10 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .Schedule-Form {
-    width: 50vw;
+    background-color: #053c5e;
      padding-top: 1vw;
+     border-radius: 20px;
+     width: 20vw;
   }
   #email{
     width: 10vw;
@@ -12,12 +14,18 @@
   }
 
   #email{
-    width: 10vw;
+    width: 20vw;
   }
   #username{
-    width: 10vw;
+    width: 20vw;
   }
   #contact{
-    width: 10vw;
+    width: 20vw;
+  }
+  .To-Signup-Schedule{
+    background-color: #053c5e;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 10px;
   }
 }
