@@ -19,12 +19,14 @@ app.get('/', (req, res) => {
 });
 
 // Require employee routes
-const studentRoutes = require('./src/routes/student.routes')
+const userRoutes = require('./src/routes/user.routes')
 
 // using as middleware
-app.use('/api/v1/student', studentRoutes)
+app.use('/api/v1/user', userRoutes)
 
 // listen for requests
 app.listen(port, () => {
     console.log(`Server is listening on port ${port}`);
 });
+
+//instalar o cors
