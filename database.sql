@@ -1,7 +1,7 @@
 CREATE DATABASE academiasaudemais;
 USE DATABASE academiasaudemais;
 
-CREATE TABLE `User`
+CREATE TABLE `user`
 (
  `id_user`          int NOT NULL AUTO_INCREMENT,
  `user_nome`        varchar(100) NOT NULL ,
@@ -21,7 +21,7 @@ KEY `FK_120` (`status_id_status`),
 CONSTRAINT `FK_118` FOREIGN KEY `FK_120` (`status_id_status`) REFERENCES `Status` (`id_status`)
 );
 
-CREATE TABLE `Plano`
+CREATE TABLE `plano`
 (
  `plano_desconto`   float NOT NULL ,
  `plano_descricao`  varchar(100) NOT NULL ,
@@ -31,7 +31,7 @@ CREATE TABLE `Plano`
 PRIMARY KEY (`id_plano`)
 );
 
-CREATE TABLE `Pagamento`
+CREATE TABLE `pagamento`
 (
  `id_pagamento`                 int NOT NULL ,
  `plano_id_plano`               int NOT NULL ,
@@ -46,7 +46,7 @@ KEY `FK_131` (`user_id_user`),
 CONSTRAINT `FK_129` FOREIGN KEY `FK_131` (`user_id_user`) REFERENCES `User` (`id_user`)
 );
 
-CREATE TABLE `Status`
+CREATE TABLE `status`
 (
  `id_status`       int NOT NULL ,
  `status_situacao` varchar(45) NOT NULL ,
@@ -54,7 +54,7 @@ CREATE TABLE `Status`
 PRIMARY KEY (`id_status`)
 );
 
-CREATE TABLE `User_Modalidade`
+CREATE TABLE `user_modalidade`
 (
  `user_id_user`       int NOT NULL ,
  `horario_id_horario` int NOT NULL ,
@@ -66,7 +66,7 @@ KEY `FK_145` (`horario_id_horario`),
 CONSTRAINT `FK_143` FOREIGN KEY `FK_145` (`horario_id_horario`) REFERENCES `Horario` (`id_horario`)
 );
 
-CREATE TABLE `Pagamento_Modalidade`
+CREATE TABLE `pagamento_modalidade`
 (
  `pagamento_id_pagamento`   int NOT NULL ,
  `modalidade_id_modalidade` int NOT NULL ,
@@ -77,7 +77,7 @@ KEY `FK_108` (`modalidade_id_modalidade`),
 CONSTRAINT `FK_106` FOREIGN KEY `FK_108` (`modalidade_id_modalidade`) REFERENCES `Modalidade` (`id_modalidade`)
 );
 
-CREATE TABLE `Avaliacao`
+CREATE TABLE `avaliacao`
 (
  `id_avaliacao`             int NOT NULL ,
  `avaliacao_peso`           float NOT NULL ,
@@ -87,7 +87,7 @@ CREATE TABLE `Avaliacao`
 PRIMARY KEY (`id_avaliacao`)
 );
 
-CREATE TABLE `Horario`
+CREATE TABLE `horario`
 (
  `id_horario`               int NOT NULL ,
  `horario_inicio`           varchar(15) NOT NULL ,
@@ -99,7 +99,7 @@ KEY `FK_140` (`modalidade_id_modalidade`),
 CONSTRAINT `FK_138` FOREIGN KEY `FK_140` (`modalidade_id_modalidade`) REFERENCES `Modalidade` (`id_modalidade`)
 );
 
-CREATE TABLE `Modalidade`
+CREATE TABLE `modalidade`
 (
  `id_modalidade`        int NOT NULL ,
  `modalidade_nome`      varchar(45) NOT NULL ,
@@ -109,7 +109,7 @@ CREATE TABLE `Modalidade`
 PRIMARY KEY (`id_modalidade`)
 );
 
-CREATE TABLE `Instrutor_modalidade`
+CREATE TABLE `instrutor_modalidade`
 (
  `user_id_user`             int NOT NULL ,
  `modalidade_id_modalidade` int NOT NULL ,
@@ -119,8 +119,3 @@ CONSTRAINT `FK_135` FOREIGN KEY `FK_137` (`modalidade_id_modalidade`) REFERENCES
 KEY `FK_155` (`user_id_user`),
 CONSTRAINT `FK_153` FOREIGN KEY `FK_155` (`user_id_user`) REFERENCES `User` (`id_user`)
 );
-
-
-
-
-
