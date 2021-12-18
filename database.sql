@@ -3,13 +3,11 @@ USE DATABASE academiasaudemais;
 
 CREATE TABLE `User`
 (
- `id_user`          int NOT NULL ,
+ `id_user`          int NOT NULL AUTO_INCREMENT,
  `user_nome`        varchar(100) NOT NULL ,
- `user_idade`       int NOT NULL ,
  `user_sexo`        varchar(10) NOT NULL ,
  `user_endereco`    varchar(100) NOT NULL ,
  `user_cpf`         varchar(15) NOT NULL ,
- `user_rg`          varchar(15) NOT NULL ,
  `user_data_nasc`   date NOT NULL ,
  `user_tel`         varchar(20) NOT NULL ,
  `plano_id_plano`   int NOT NULL ,
