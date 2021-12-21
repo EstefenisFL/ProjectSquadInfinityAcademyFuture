@@ -1,6 +1,17 @@
-.top-menu-item:not(:nth-last-child(1)){
-    border-right: 2px solid white;
+.top-menu-item:not(:nth-last-child(2)){
+
+margin-bottom: 0;
+
+
+
 }
 .top-menu-item:hover{
-    background-color: #064b04;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:600;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+
+
 }

@@ -1,3 +1,4 @@
+
 import React,{Component} from 'react'
 import {Form,Button,Message} from 'semantic-ui-react'
 import InlineError from '../misc/InlineError'
@@ -59,8 +60,10 @@ class SignupForm extends Component{
                         <p>{this.state.errors.global}</p>
                     </Message>
                 )}
+
+
                 <Form.Field error={!!this.state.errors.username} >
-                    <label htmlFor="username" style = {{color: "white"}}>Username</label>
+                    <label htmlFor="username" style = {{color: "white"}}>UserName</label>
                     <input
                         style={{width:"20vw", height: "2vw"}}
                         type="username"
@@ -71,6 +74,84 @@ class SignupForm extends Component{
                     />
                     {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
                 </Form.Field>
+
+
+
+                <Form.Field error={!!this.state.errors.username} >
+                    <label htmlFor="username" style = {{color: "white"}}>Sexo</label>
+                    <input
+                        style={{width:"20vw", height: "2vw"}}
+                        type="username"
+                        id="username"
+                        name="username"
+                        value={this.state.data.username}
+                        onChange={this.onChange}
+                    />
+                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                </Form.Field>
+
+
+
+                <Form.Field error={!!this.state.errors.username} >
+                    <label htmlFor="username" style = {{color: "white"}}>Endereço</label>
+                    <input
+                        style={{width:"20vw", height: "2vw"}}
+                        type="username"
+                        id="username"
+                        name="username"
+                        value={this.state.data.username}
+                        onChange={this.onChange}
+                    />
+                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                </Form.Field>
+
+
+
+
+                 <Form.Field error={!!this.state.errors.username} >
+                    <label htmlFor="username" style = {{color: "white"}}>CPF</label>
+                    <input
+                        style={{width:"20vw", height: "2vw"}}
+                        type="username"
+                        id="username"
+                        name="username"
+                        value={this.state.data.username}
+                        onChange={this.onChange}
+                    />
+                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                </Form.Field>
+
+
+                 <Form.Field error={!!this.state.errors.username} >
+                    <label htmlFor="username" style = {{color: "white"}}>Data de Nascimento</label>
+                    <input
+                        style={{width:"20vw", height: "2vw"}}
+                        type="username"
+                        id="username"
+                        name="username"
+                        value={this.state.data.username}
+                        onChange={this.onChange}
+                    />
+                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                </Form.Field>
+
+
+                <Form.Field error={!!this.state.errors.username} >
+                    <label htmlFor="username" style = {{color: "white"}}>Telefone</label>
+                    <input
+                        style={{width:"20vw", height: "2vw"}}
+                        type="username"
+                        id="username"
+                        name="username"
+                        value={this.state.data.username}
+                        onChange={this.onChange}
+                    />
+                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                </Form.Field>
+
+
+
+
                 <Form.Field error={!!this.state.errors.password}>
                     <label htmlFor="password" style = {{color: "white"}}>Password</label>
                     <input className="Login-Inputs-password"
@@ -85,6 +166,10 @@ class SignupForm extends Component{
                 </Form.Field>
                 <Button onClick={() => this.onSubmit } primary style = {{marginLeft: "7vw"}}>Signup</Button>
             </Form>
+
+
+
+
         );
     }
 }

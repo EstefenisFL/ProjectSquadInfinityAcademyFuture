@@ -6,63 +6,70 @@ import './index.css'
 
 class TopMenu extends Component {
 
-        constructor(props) {
-            super(props)
-        
-            this.state = {
+    constructor(props) {
+        super(props)
+
+        this.state = {
+            menu_class: '',
+        }
+    }
+
+    setToggleMenuClass = () => {
+        if (this.state.menu_class === '') {
+            this.setState({
+                menu_class: 'toggled',
+            })
+        } else {
+            this.setState({
                 menu_class: '',
-            }
+
+            })
         }
+    }
 
-        setToggleMenuClass = () =>{
-            if(this.state.menu_class === ''){
-                this.setState({
-                    menu_class: 'toggled',
-                })
-            } else{
-                this.setState({
-                    menu_class: '',
-                })
-            }
-        }
-        
-        render = () =>{
-            let top_menu_class = `top-menu ${this.state.menu_class}`
-            return (
-                <div>
-                    <div className = {top_menu_class}>
-                        <Lead text=''></Lead>
-                        <div className = 'left'>
+    render = () => {
+        let top_menu_class = `top-menu ${this.state.menu_class}`
+        return (
 
-                        <NavLink to="/">
-                            <Item text='HOME'/>
-                        </NavLink>
+            <div>
 
-                        <NavLink to="/about">
-                            <Item text='QUEM SOMOS'/>
-                        </NavLink>
+            <div className = { top_menu_class } >
 
-                        <NavLink to="/agendamento">
-                            <Item text='AGENDE SEU HORÁRIO'/>
-                        </NavLink>
+          
+            <div className = 'left'>
 
-                        <NavLink to='/contact'>
-                            <Item text='CONTATO'/>
-                        </NavLink>
+                    <NavLink to = "/">
+                        <Item text = 'HOME' / >
+                    </NavLink>
+
+                    <NavLink to = "/about" >
+                        <Item text = 'QUEM SOMOS' / >
+                    </NavLink>
+
+                    <NavLink to = "/agendamento" >
+                    <Item text = 'AGENDE SEU HORÁRIO' / >
+                    </NavLink>
+
+                    <NavLink to = '/contact' >
+                    <Item text = 'CONTATO' / >
+                    </NavLink>
+            </div> 
+
+            <div className = 'right' >
+                    <NavLink to = '/login' >
 
 
+                    <Item text = 'LOGIN' / >
+                    </NavLink> 
 
-                        </div>
-                        <div className= 'right'>
-                        <NavLink to='/login'>
-                            <Item text='LOGIN'/>
-                        </NavLink>
-                        </div>                 
-                        <div className='clear-fix'/>
-                    </div>
-                </div>
+            </div > 
+
+
+            <div className = 'clear-fix' / >
+            </div> 
+        </div >
         )
     }
 }
 
-export default TopMenu
+export default TopMenu;
