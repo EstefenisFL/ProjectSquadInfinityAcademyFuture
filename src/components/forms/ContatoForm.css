@@ -1,13 +1,14 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .Contato-Form {
-    margin-left: 15vw;
+    margin-left: 12vw;
     width: 20vw;
     background-color: #053c5e;
     border-radius: 8px;
-    padding-top: 15px;   
+    padding-top: 18px;   
     border-color: black;
     border-width: 2px; 
+    margin-top: -3vw;
   }
 
   .Contato-Inputs {

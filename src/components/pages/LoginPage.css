@@ -1,22 +1,18 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .Login-Page-Body {
-    display: inline-block;
-    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-    margin-left: 35vw;
-    margin-top: 60%;
-    height: 80vh;
-    width: 225vh;
-    padding-top: 10vh;
- 
+    display: inline-block; 
   }
 
   .Login-Page-Head {
-    background-repeat:no-repeat;
-    display: inline-block;
-    margin-left: 25vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin-left: 50vw;
     margin-top: 8vw;
-    }
+    height: 36vw;
+    width: 100%;
+    padding-top: 6vw;
+    padding-left: 10vw;
+  }
 
   .Login-title {
     margin-left: 15vw;
