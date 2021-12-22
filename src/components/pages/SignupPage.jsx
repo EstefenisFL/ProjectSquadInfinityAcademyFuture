@@ -7,6 +7,7 @@ import Header from '../Shared/Header(fixed)/headerFixed';
 import TopMenu from '../Shared/topMenu';
 import SignupForm from '../forms/SignupForm';
 import './SignupPage.css';
+import Footer from '../Shared/Footer(fixed)/footerFixed';
 
 class SignupPage extends Component{
 
@@ -25,13 +26,21 @@ class SignupPage extends Component{
     }
     render(){
         return(
-            <div className="Signup-main">
-                <Header/>
-                <TopMenu/>
-                <div className ="Signup-Content">
-                <h1 style = {{marginLeft: "60vw"}}>Cadastro</h1>
-                <SignupForm submit={this.submit}/><br/>
-                <div style = {{marginLeft: "58vw"}}>Already have an account? <Link to="/login">Login here</Link></div>
+            <div>
+                <div className='Signup-Heading'>
+                        <hr />
+                        <h2>Signup</h2>
+                        <hr />
+                </div>
+                <div className="Signup-main">
+                    <Header/>
+                    <TopMenu/>
+                    <Footer/>
+                    <div className ="Signup-Content">
+                    <h1 style = {{marginLeft: "60vw"}}>Cadastro</h1>
+                    <SignupForm submit={this.submit}/><br/>
+                    <div style = {{marginLeft: "58vw"}}>Already have an account? <Link to="/login">Login here</Link></div>
+                    </div>
                 </div>
             </div>
         )

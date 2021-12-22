@@ -24,10 +24,10 @@ class LoginPage extends Component{
         return(
             <div>
                 <div className='Login-Heading'>
-                        <hr />
-                        <h2>Login</h2>
-                        <hr />
-                    </div>
+                    <hr />
+                    <h2>Login</h2>
+                    <hr />
+                </div>
                 
                 <div className = "Login-Page-Body">
                     <Header/>

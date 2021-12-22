@@ -52,11 +52,10 @@ class TopMenu extends Component {
                         </NavLink>
                         </div>
                         <div className= 'right'>
-                        <Link to="/login"><Button primary className = "Enviar" style={{marginLeft: "50vw", marginTop: "-3vw"}}>Login</Button>
+                        <Link to="/login"><Button primary className = "Link" style={{marginTop: "-3vw"}}>Login</Button>
                             </Link>
-                        <NavLink to='/login'>
-                            <Item text='LOGIN'/>
-                        </NavLink>                    
+                        <Link to="/signup"><Button color='orange' className = "Link" style={{marginTop: "-3vw"}}>Signup</Button>
+                            </Link>                    
                         </div>                 
                         <div className='clear-fix'/>
                     </div>

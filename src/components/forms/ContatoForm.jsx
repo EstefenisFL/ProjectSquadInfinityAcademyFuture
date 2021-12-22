@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import {Form, Button, Message} from 'semantic-ui-react';
 import InlineError from '../misc/InlineError';
 import './ContatoForm.css';
+import {Link} from 'react-router-dom';
 
 class ContatoForm extends Component{
     constructor(props){
@@ -51,7 +52,8 @@ class ContatoForm extends Component{
 
     render(){
         return(
-            <Form onSubmit={this.onSubmit} loading={this.state.loading} className = "Contato-Form">
+            <Form onSubmit={this.onSubmit} loading={this.state.loading} className = "Contact-Form">
+                <h1 className = "Contact-title">Contato Page</h1>
                 {this.state.errors.global && (
                     <Message negative>
                         <Message.Header>Something went wrong</Message.Header>
@@ -60,7 +62,7 @@ class ContatoForm extends Component{
                     )}
                 <Form.Field error={!!this.state.errors.name}>
                     <label htmlFor="username" style = {{color: "white"}}>Name</label>
-                    <input className="Contato-Inputs"
+                    <input className="Contact-Inputs"
                         type="username"
                         id="username"
                         name="username"
@@ -73,7 +75,7 @@ class ContatoForm extends Component{
                 <Form.Field error={!!this.state.errors.email}>
                     <label htmlFor="email" style = {{color: "white"}}>Email</label>
                     <input
-                        className="Contato-Inputs"
+                        className="Contact-Inputs"
                         type="email"
                         id="email"
                         name="email"
@@ -85,7 +87,7 @@ class ContatoForm extends Component{
                 </Form.Field><br/>
                 <Form.Field error={!!this.state.errors.contact}>
                     <label htmlFor="contact" style = {{color: "white"}}>Contato</label>
-                    <input className="Contato-Inputs"
+                    <input className="Contact-Inputs"
                         type="contact"
                         id="contact"
                         name="contact"
@@ -95,7 +97,8 @@ class ContatoForm extends Component{
                     />
                     {this.state.errors.contact && <InlineError text={this.state.errors.contact}/>}
                 </Form.Field>
-                <Button primary className = "Enviar" style={{marginLeft: "7vw"}}>Enviar</Button>
+                <Button primary className = "Enviar" style={{marginLeft: "8vw"}}>Enviar</Button>
+                <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
             </Form>
         );
     }

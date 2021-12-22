@@ -53,6 +53,7 @@ class ScheduleForm extends Component{
     render(){
         return(
             <Form onSubmit={this.onSubmit} loading={this.state.loading} className = "Schedule-Form">
+                <h1 className = "Schedule-title">Agendamento Page</h1>
                 {this.state.errors.global && (
                     <Message negative>
                         <Message.Header>Something went wrong</Message.Header>
@@ -95,7 +96,7 @@ class ScheduleForm extends Component{
                     />
                     {this.state.errors.contact && <InlineError text={this.state.errors.contact}/>}
                 </Form.Field>
-                <Button primary className = "Schedule-Button" style={{marginLeft: "8vw"}}>Login</Button>
+                <Button primary className = "Schedule-Button" style={{marginLeft: "8vw"}}>Enviar</Button>
                 <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
             </Form>
         );

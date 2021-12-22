@@ -1,9 +1,8 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .Contato-Form {
+  .Contact-Form {
     margin-left: 12vw;
     width: 20vw;
-    background-color: #053c5e;
     border-radius: 8px;
     padding-top: 18px;   
     border-color: black;
@@ -11,12 +10,16 @@
     margin-top: -3vw;
   }
 
-  .Contato-Inputs {
+  .Contact-Inputs {
     width: 20vw;
     height: 2vw;
   }
-
-  .Enviar mensagem-Button {
-    margin-left: 7vw;
+  .Contact-title {
+    margin-left: -1vw;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 20vw;
+    padding-left: 115px;
+    margin-bottom: 0px;
   }
 }
