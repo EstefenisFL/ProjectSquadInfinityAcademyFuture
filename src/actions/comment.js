@@ -1,4 +1,4 @@
-import api from '../api'
+/* import api from '../api'
 export const commentCreated = (comment) =>({
     type: 'COMMENT_CREATED',
     comment
@@ -20,4 +20,4 @@ export const editComment = (details) => dispatch =>
     api.comment.editComment(details).then(newComment => dispatch(commentEdited(newComment)))
 
 export const deleteComment = (details) => dispatch =>
-    api.comment.deleteComment(details).then( () => dispatch(commentDeleted()))
+    api.comment.deleteComment(details).then( () => dispatch(commentDeleted())) */

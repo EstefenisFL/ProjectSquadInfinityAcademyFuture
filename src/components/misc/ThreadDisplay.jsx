@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import {
   Form,
   Button,
@@ -143,7 +143,7 @@ class ThreadDisplay extends Component {
     return (
       <div className="threadContainer" style={{ background: "#ED4832" }}>
         {" "}
-        {/*053C5E */}
+        {053C5E}
         <div className="leftDiv">
           <Button
             compact
@@ -232,3 +232,4 @@ function mapStateToProps(state) {
 export default withRouter(
   connect(mapStateToProps, { editThread, deleteThread })(ThreadDisplay)
 );
+ */

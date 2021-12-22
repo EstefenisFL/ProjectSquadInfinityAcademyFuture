@@ -22,14 +22,22 @@ class LoginPage extends Component{
     }
     render(){
         return(
-            <div className = "Login-Page-Body">
-                <Header/>
-                <TopMenu/>
-                <Footer/>
-                <div className = "Login-Page-Head">
-                <h1 className = "Login-title">Login Page</h1>
-                <LoginForm submit={this.submit}/><br/>
-                <div className = "To-signup">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
+            <div>
+                <div className='Login-Heading'>
+                        <hr />
+                        <h2>Login</h2>
+                        <hr />
+                    </div>
+                
+                <div className = "Login-Page-Body">
+                    <Header/>
+                    <TopMenu/>
+                    <Footer/>
+                    <div className = "Login-Page-Head">
+                    <h1 className = "Login-title">Login Page</h1>
+                    <LoginForm submit={this.submit}/><br/>
+                    <div className = "To-signup">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
+                    </div>
                 </div>
             </div>
         )

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import { Form, Button, Message, Comment, Icon, Label } from "semantic-ui-react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
@@ -235,3 +235,4 @@ function mapStateToProps(state) {
 export default connect(mapStateToProps, { editComment, deleteComment })(
   CommentDisplay
 );
+ */

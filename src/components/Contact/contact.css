@@ -34,18 +34,14 @@
   .Society-Context {
     margin-left: 50vw;
     background-color: rgb(255, 255, 255);
-    background-position: right;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    width: 70vw;
+    width: 80vw;
   }
 
   .Society-Content {
     background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
     width: 130%;
-    height: 110%;
-    margin-top: 100px;
-    margin-left: -100px;
+    height: 100%;
+    margin-left: -200px;
     padding-left: 30%;
     padding-top: 20%;
   }

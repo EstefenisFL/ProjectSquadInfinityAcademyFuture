@@ -77,7 +77,7 @@ class LoginForm extends Component{
                     />
                     {this.state.errors.password && <InlineError text={this.state.errors.password}/>}
                 </Form.Field>
-                <Button primary className = "Login-Button" style = {{marginLeft: "120px"}}>Login</Button>
+                <Button primary className = "Login-Button" style = {{marginLeft: "140px"}}>Login</Button>
             </Form>
         );
     }

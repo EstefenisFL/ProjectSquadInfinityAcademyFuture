@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types'
@@ -28,5 +28,5 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps,{logout})(NavBar);
+export default connect(mapStateToProps,{logout})(NavBar); */
 

@@ -1,34 +1,47 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
   .Login-Page-Body {
-    display:inline-flex;   
-    background-color: #053c5e;
+    display: inline-block;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin-left: 35vw;
+    margin-top: 60%;
+    height: 80vh;
+    width: 225vh;
+    padding-top: 10vh;
+ 
   }
 
   .Login-Page-Head {
-    margin-left: 500px;
-    margin-top: 10vw;
-    background-color: #053c5e;
-    background-attachment: fixed;
-    background-size:100%;
     background-repeat:no-repeat;
     display: inline-block;
-    width: 100%;
-    height: 100%;
-    padding-top: 40px;
+    margin-left: 25vw;
+    margin-top: 8vw;
     }
 
   .Login-title {
     margin-left: 15vw;
-    background-color: #f18509cc;
+    background-color: #053c5e;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     width: 20vw;
-    padding-left: 90px;
+    padding-left: 115px;
     margin-bottom: 0px;
   }
 
   .To-signup {
     margin-left: 15vw;
+  }
+
+  .Login-Heading{
+  display: flex;
+  flex-direction: column;
+  background-color: #053c5e;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 30%;
+  color: white;
+  position: fixed;
+  left: 0;
   }
 }
