@@ -1,6 +1,5 @@
 import React from 'react';
 import './mainBody.css'
-import DisplayTiles from './DisplayTiles/displayTiles'
 import Header from '../../Shared/Header(fixed)/headerFixed'
 import TopMenu from '../../Shared/topMenu/index'
 import Footer from '../../Shared/Footer(fixed)/footerFixed';

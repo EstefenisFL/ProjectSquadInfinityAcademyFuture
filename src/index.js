@@ -11,6 +11,7 @@ import thunk from 'redux-thunk';
 import App from './App';
 import rootReducer from './rootReducer';
 import {userLoggedIn} from "./actions/auth";
+import Apps from './Apps';
 
 const store = createStore(
     rootReducer,

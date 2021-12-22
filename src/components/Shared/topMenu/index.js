@@ -43,12 +43,16 @@ class TopMenu extends Component {
                             <Item text='QUEM SOMOS'/>
                         </NavLink>
 
-                        <NavLink to="/agendamento">
+                        <NavLink to="/schedule">
                             <Item text='AGENDE SEU HORÁRIO'/>
                         </NavLink>
 
                         <NavLink to='/contact'>
                             <Item text='CONTATO'/>
+                        </NavLink>
+
+                        <NavLink to='/userlist'>
+                            <Item text='USUÁRIOS'/>
                         </NavLink>
                         </div>
                         <div className= 'right'>

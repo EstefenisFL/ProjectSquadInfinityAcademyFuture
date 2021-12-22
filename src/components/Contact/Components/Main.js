@@ -1,6 +1,5 @@
 import React from 'react';
 import facultyList from './facultyList';
-import FacultyCard from './FacultyCard';
 import ContatoForm from '../../forms/ContatoForm';
 
 class ContactMain extends React.Component{
