@@ -77,17 +77,26 @@ class SignupForm extends Component{
 
 
 
-                <Form.Field error={!!this.state.errors.username} >
-                    <label htmlFor="username" style = {{color: "white"}}>Sexo</label>
-                    <input
+                <Form.Field error={!!this.state.errors.Sexo} >
+                    <label htmlFor="Sexo" style = {{color: "white"}}>Sexo</label>                  
+
+                   
+
+                <select 
                         style={{width:"20vw", height: "2vw"}}
-                        type="username"
-                        id="username"
-                        name="username"
-                        value={this.state.data.username}
-                        onChange={this.onChange}
-                    />
-                    {this.state.errors.username && <InlineError text={this.state.errors.username}/>}
+                        type="Sexo"
+                        id="Sexo"
+                        name="Sexo"
+                        value={this.state.data.Sexo}
+                        onChange={this.onChange}>
+
+                            <option ></option>
+                            <option >Masculino</option>
+                            <option >Feminino</option>
+                </select>                
+
+
+                    {this.state.errors.Sexo && <InlineError text={this.state.errors.Sexo}/>}
                 </Form.Field>
 
 
@@ -154,6 +163,8 @@ class SignupForm extends Component{
 
                 <Form.Field error={!!this.state.errors.password}>
                     <label htmlFor="password" style = {{color: "white"}}>Password</label>
+
+
                     <input className="Login-Inputs-password"
                         style={{width:"20vw", height: "2vw"}}
                         type="password"
