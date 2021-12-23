@@ -1,6 +1,4 @@
 import React from 'react';
-import scheduleList from './scheduleList';
-import ScheduleCard from './ScheduleCard';
 import CalendarApp from './Calendar';
 import ScheduleForm from '../../forms/ScheduleForm';
 
@@ -8,12 +6,10 @@ class ScheduleMain extends React.Component{
     constructor(){
         super()
         this.state = {
-            data: scheduleList
         }
     }
     render()
     {
-        const scheduleData = this.state.data.map(item => <ScheduleCard key={item.name} item={item}/>)
         return (
             <main>
                 <div className='Schedule-Heading'>

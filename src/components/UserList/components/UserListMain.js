@@ -1,20 +1,29 @@
-import React, { Component } from "react";
+import React from "react";
+import {Form,Button} from 'semantic-ui-react';
 import api from '../../../api';
+import {setBaseUrl} from '../../../actions/auth';
 
 class UserListMain extends React.Component{
-        state= {
+    constructor(props){
+        super(props);    
+        this.state= {
             persons: [],
+        },
+        this.getUser=this.getUser.bind(this);
+    }
+        
+        async getUser() {
+            const response = await api.actions.getAllUsers(); 
+            this.setState({ persons: response});
+            console.log(response.data);
         }
-    
-        async componentDidMount(){
-            const response = await api.get('/v1/user/');
-    
-            this.setState({ persons: response.data});
-        }
+
+        
+
     render(){
         const { persons } = this.state;
         return (
-            <main className='User-main'>
+            <div className='User-main'>
                 <div className='User-Heading'>
                     <hr />
                     <h2>Lista de Usuários</h2>
@@ -36,8 +45,9 @@ class UserListMain extends React.Component{
                         </p>
                     </li>
                 ))}
+                <Button onClick={this.getUser} primary style = {{marginLeft: "7vw"}}>Listar</Button>
                 </div>
-            </main>
+            </div>
         )
     }
 }

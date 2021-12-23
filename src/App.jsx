@@ -3,11 +3,11 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import LoginPage from "./components/pages/LoginPage"
 
-import UserRoute from "./components/pageroutes/UserRoute"
+//import UserRoute from "./components/pageroutes/UserRoute"
 import GuestRoute from "./components/pageroutes/GuestRoute"
 
 import SignupPage from "./components/pages/SignupPage";
-import NavBar from './components/misc/Navigation';
+//import NavBar from './components/misc/Navigation';
 import UserList from './components/UserList/userList';
 
 import About from './components/About/about';

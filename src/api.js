@@ -1,13 +1,5 @@
 import axios from "axios";
 
-const api = axios.create({
-  baseURL: process.env.REACT_APP_API_BASE_URL,
-});
-
-export default api;
-
-/*import axios from "axios";
- 
 export default {
   user: {
     login: (credentials) =>
@@ -22,7 +14,7 @@ export default {
         return res.data.user;
       }),
   },
-  thread: {
+  /* thread: {
     createThread: (details) =>
       axios
         .post("backend/newthread", { details })
@@ -50,5 +42,33 @@ export default {
         .delete(`/backend/deletecomment/${commentId}`)
         .then((res) => res.data.message),
   },
+
+  conection: { 
+    setBaseUrl: () =>
+    axios
+    .create({
+    baseURL: process.env.REACT_APP_API_BASE_URL,
+  }),
+  },*/
+  
+  actions: {
+    getAllUsers: () =>
+    axios.get('http://localhost:5000/api/v1/user/').then((res) => {
+      console.log("Get All Works", res.data);
+      return res.data;
+  }),
+  createUser: (data) =>
+    axios.post('http://localhost:5000/api/v1/user/', { data }).then((res) => {
+      console.log("Create User With Success", res);
+      return res;
+  }),
+  }
 };
-export default api; */
+
+/*import axios from "axios";
+
+ const api = axios.create({
+  baseURL: process.env.REACT_APP_API_BASE_URL,
+});
+
+export default api;*/
