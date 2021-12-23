@@ -3,7 +3,7 @@ import React from 'react';
 
 function Tile() {
   return (
-		<div class="aboutTile">
+		<div className="aboutTile">
 
             <div className="aboutTileHeading">
                 <hr /> 

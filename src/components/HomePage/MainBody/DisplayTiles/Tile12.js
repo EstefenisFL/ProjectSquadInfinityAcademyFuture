@@ -4,7 +4,7 @@ import React from 'react';
 function Tile(props) {
   const listItems = props.content.map(item => <li>{item}</li>)
   return (
-		<div class="tile">
+		<div className="tile">
 
       <div className="tileHeading">
         <hr /> 

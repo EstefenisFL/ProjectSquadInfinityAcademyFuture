@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Item from './item';
 import Lead from './lead';
 import { NavLink, Link } from "react-router-dom";
+import {Button} from 'semantic-ui-react'
 import './index.css'
 
 class TopMenu extends Component {
@@ -42,7 +43,7 @@ class TopMenu extends Component {
                             <Item text='QUEM SOMOS'/>
                         </NavLink>
 
-                        <NavLink to="/agendamento">
+                        <NavLink to="/schedule">
                             <Item text='AGENDE SEU HORÁRIO'/>
                         </NavLink>
 
@@ -50,13 +51,15 @@ class TopMenu extends Component {
                             <Item text='CONTATO'/>
                         </NavLink>
 
-
-
+                        <NavLink to='/userlist'>
+                            <Item text='USUÁRIOS'/>
+                        </NavLink>
                         </div>
                         <div className= 'right'>
-                        <NavLink to='/login'>
-                            <Item text='LOGIN'/>
-                        </NavLink>
+                        <Link to="/login"><Button primary className = "Link" style={{marginTop: "-3vw"}}>Login</Button>
+                            </Link>
+                        <Link to="/signup"><Button color='orange' className = "Link" style={{marginTop: "-3vw"}}>Signup</Button>
+                            </Link>                    
                         </div>                 
                         <div className='clear-fix'/>
                     </div>

@@ -9,9 +9,9 @@ import {Provider} from 'react-redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
 import rootReducer from './rootReducer';
 import {userLoggedIn} from "./actions/auth";
+import Apps from './Apps';
 
 const store = createStore(
     rootReducer,
@@ -30,5 +30,3 @@ ReactDOM.render(
         </Provider>
     </BrowserRouter>, document.getElementById('root')
     );
-
-registerServiceWorker();

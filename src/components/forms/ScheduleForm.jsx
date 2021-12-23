@@ -1,10 +1,10 @@
 import React, {Component} from 'react'
 import {Form, Button, Message} from 'semantic-ui-react';
 import InlineError from '../misc/InlineError';
-import './ContatoForm.css';
+import './ScheduleForm.css';
 import {Link} from 'react-router-dom';
 
-class ContatoForm extends Component{
+class ScheduleForm extends Component{
     constructor(props){
         super(props);
         this.state={
@@ -21,7 +21,7 @@ class ContatoForm extends Component{
     }
     onChange = (e) =>{
         this.setState({
-            data:{...this.state.data,[e.target.name]:e.target.value[e.target.contact]}
+            data:{...this.state.data,[e.target.name]:e.target.value}
         })
     }
     onSubmit = () =>{
@@ -52,8 +52,8 @@ class ContatoForm extends Component{
 
     render(){
         return(
-            <Form onSubmit={this.onSubmit} loading={this.state.loading} className = "Contact-Form">
-                <h1 className = "Contact-title">Contato Page</h1>
+            <Form onSubmit={this.onSubmit} loading={this.state.loading} className = "Schedule-Form">
+                <h1 className = "Schedule-title">Agendamento Page</h1>
                 {this.state.errors.global && (
                     <Message negative>
                         <Message.Header>Something went wrong</Message.Header>
@@ -62,11 +62,11 @@ class ContatoForm extends Component{
                     )}
                 <Form.Field error={!!this.state.errors.name}>
                     <label htmlFor="username" style = {{color: "white"}}>Name</label>
-                    <input className="Contact-Inputs"
+                    <input className="Schedule-Inputs"
                         type="username"
                         id="username"
-                        name="username"
-                        placeholder="name"
+                        name="name"
+                        placeholder="username"
                         value={this.state.data.name}
                         onChange={this.onChange}
                     />
@@ -74,8 +74,7 @@ class ContatoForm extends Component{
                 </Form.Field>
                 <Form.Field error={!!this.state.errors.email}>
                     <label htmlFor="email" style = {{color: "white"}}>Email</label>
-                    <input
-                        className="Contact-Inputs"
+                    <input className="Schedule-Inputs"
                         type="email"
                         id="email"
                         name="email"
@@ -84,10 +83,10 @@ class ContatoForm extends Component{
                         onChange={this.onChange}
                     />
                     {this.state.errors.email && <InlineError text={this.state.errors.email}/>}
-                </Form.Field><br/>
+                </Form.Field>
                 <Form.Field error={!!this.state.errors.contact}>
                     <label htmlFor="contact" style = {{color: "white"}}>Contato</label>
-                    <input className="Contact-Inputs"
+                    <input className="Schedule-Inputs"
                         type="contact"
                         id="contact"
                         name="contact"
@@ -97,10 +96,10 @@ class ContatoForm extends Component{
                     />
                     {this.state.errors.contact && <InlineError text={this.state.errors.contact}/>}
                 </Form.Field>
-                <Button primary className = "Enviar" style={{marginLeft: "8vw"}}>Enviar</Button>
+                <Button primary className = "Schedule-Button" style={{marginLeft: "8vw"}}>Enviar</Button>
                 <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
             </Form>
         );
     }
 }
-export default ContatoForm;
+export default ScheduleForm;

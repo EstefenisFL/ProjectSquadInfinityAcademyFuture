@@ -7,6 +7,7 @@ import {login} from '../../actions/auth';
 import './LoginPage.css';
 import Header from '../Shared/Header(fixed)/headerFixed';
 import TopMenu from '../Shared/topMenu';
+import Footer from '../Shared/Footer(fixed)/footerFixed';
 
 class LoginPage extends Component{
 
@@ -17,17 +18,26 @@ class LoginPage extends Component{
 
     submit=(data)=>{
         return this.props.login(data)
-            .then(() => this.props.history.push("/forum"));
+            .then(() => this.props.history.push("/"));
     }
     render(){
         return(
-            <div className = "Login-Page-Body">
-                <Header/>
-                <TopMenu/>
-                <div className = "Login-Page-Head">
-                <h1 className = "Login-title">Login Page</h1>
-                <LoginForm submit={this.submit}/><br/>
-                <div className = "To-signup">Don't have an account? <Link to="/signup">Sign up here</Link></div>
+            <div>
+                <div className='Login-Heading'>
+                    <hr />
+                    <h2>Login</h2>
+                    <hr />
+                </div>
+                
+                <div className = "Login-Page-Body">
+                    <Header/>
+                    <TopMenu/>
+                    <Footer/>
+                    <div className = "Login-Page-Head">
+                    <h1 className = "Login-title">Login Page</h1>
+                    <LoginForm submit={this.submit}/><br/>
+                    <div className = "To-signup">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
+                    </div>
                 </div>
             </div>
         )

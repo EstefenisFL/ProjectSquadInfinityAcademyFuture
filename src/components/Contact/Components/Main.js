@@ -1,9 +1,8 @@
 import React from 'react';
 import facultyList from './facultyList';
-import FacultyCard from './FacultyCard';
 import ContatoForm from '../../forms/ContatoForm';
 
-class SocietyMain extends React.Component{
+class ContactMain extends React.Component{
     constructor(){
         super()
         this.state = {
@@ -12,7 +11,6 @@ class SocietyMain extends React.Component{
     }
     render()
     {
-        const facultyData = this.state.data.map(item => <FacultyCard key={item.name} item={item}/>)
         return (
             <main className='Society-main'>
                 <div className='Society-Heading'>
@@ -31,4 +29,4 @@ class SocietyMain extends React.Component{
     }
 }
 
-export default SocietyMain;
+export default ContactMain;

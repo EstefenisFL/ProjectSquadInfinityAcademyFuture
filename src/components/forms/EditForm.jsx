@@ -1,4 +1,4 @@
-import React,{Component} from 'react'
+/* import React,{Component} from 'react'
 import {Form,Button,Message} from 'semantic-ui-react'
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
@@ -63,7 +63,7 @@ class EditForm extends Component{
                     />
                     {this.state.errors.body && <InlineError text={this.state.errors.body}/>}
                 </Form.Field>
-                {/* <Button primary compact>Save</Button> */}
+                {<Button primary compact>Save</Button>}
                 <input type="submit" value="Save"/>
             </Form>
         );
@@ -79,4 +79,4 @@ function mapStateToProps(state){
     }
 }
 
-export default connect(mapStateToProps)(EditForm)
+export default connect(mapStateToProps)(EditForm) */

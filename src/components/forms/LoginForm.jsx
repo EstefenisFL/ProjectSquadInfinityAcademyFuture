@@ -38,7 +38,7 @@ class LoginForm extends Component{
             this.props.submit(this.state.data)
                 .catch(err => this.setState({
                     errors: err.response.data.errors,
-                    //errors: {global: false},
+                    errors: {global: false},
                     loading:false
                 }));
         }
@@ -77,7 +77,7 @@ class LoginForm extends Component{
                     />
                     {this.state.errors.password && <InlineError text={this.state.errors.password}/>}
                 </Form.Field>
-                <Button primary className = "Login-Button" style = {{marginLeft: "120px"}}>Login</Button>
+                <Button primary className = "Login-Button" style = {{marginLeft: "140px"}}>Login</Button>
             </Form>
         );
     }

@@ -1,4 +1,4 @@
-import api from '../api'
+/* import api from '../api'
 export const threadCreated = (thread) =>({
     type: 'THREAD_CREATED',
     thread
@@ -28,4 +28,4 @@ export const deleteThread = (threadId) => dispatch =>
         console.log("Thread deleted",threadId)
         dispatch(threadDeleted(threadId))
     }
-    ); 
+    );  */

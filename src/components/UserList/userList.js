@@ -1,21 +1,21 @@
 import React from 'react';
 import Header from '../Shared/Header(fixed)/headerFixed';
-import TopMenu from '../Shared/topMenu/index';
-import ScheduleMain from './Components/ScheduleMain';
-import './schedule.css';
+import UserListMain from './components/UserListMain';
+import TopMenu from '../Shared/topMenu/index'
+import './userList.css';
 import Footer from '../Shared/Footer(fixed)/footerFixed';
 
-class Schedule extends React.Component{
+class UserList extends React.Component{
   render(){
     return (
       <div className="App">
           <Header/>
           <TopMenu/>
-          <ScheduleMain />
+          <UserListMain/>
           <Footer/>
       </div>
     )
   }
 }
 
-export default Schedule;
+export default UserList;
