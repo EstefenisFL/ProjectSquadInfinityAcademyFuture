@@ -1,0 +1,56 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .top-menu{
+        margin-left: 390px;
+        z-index: 5;
+        top: 7.5rem;
+        background-color: #0d9720;
+        padding: 6px 23px 0px 25px;
+        user-select: none;
+        position: fixed;
+        width: 101%;
+        height: 50px;
+    }
+    .top-menu > .right{
+        float: right;
+    }
+    .top-menu > .right > *{
+        margin-left: 5px;
+    }
+    .top-menu > .left{
+        float: left;
+    }
+    .top-menu > .left >*{
+        margin-right: 5px;
+        position: relative;
+    }
+    .top-menu > .left >*:last-of-type{
+        margin-right: 5px;
+    }
+    .top-menu > .left >*:first-of-type{
+        margin-right: 0px;
+        margin-left: -27px;
+    }
+    .top-menu > .right >*:first-of-type{
+        margin-right: auto;
+    }
+    .top-menu > .left > *, .top-menu > .right > *{
+        padding: 9px;
+        display: inline-block;
+        text-align: center;
+        min-width: 50px;
+        color: #ebe1dc;
+
+    }
+    /* .top-menu *:hover{
+        cursor: pointer;
+        color: black;
+        background-color: #064b04;
+    } */
+    .clear-fix{
+        clear: both;
+    }
+}
+
+
+

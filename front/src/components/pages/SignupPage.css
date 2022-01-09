@@ -1,0 +1,29 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .Signup-main{
+    display: inline-block; 
+  }
+  .Signup-Content{
+    width: 130vw;
+    height: 40.8vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin-top: 8vw;
+    padding-top: 4vw;
+    padding-left: 22vw;
+
+  }
+  .Signup-Heading{
+    display: flex;
+    flex-direction: column;
+    background-color: #053c5e;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    color: white;
+    position: fixed;
+    left: 0;
+    }
+
+
+}

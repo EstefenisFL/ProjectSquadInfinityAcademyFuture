@@ -1,0 +1,80 @@
+@charset "utf-8";
+/************* For Main Tag*************/
+
+@media only screen and (min-width: 1200px) {
+  main {
+    height: 100vh;
+  }
+
+  .Schedule-Heading {
+    padding-top: 4.8vw;
+    display: flex;
+    flex-direction: column;
+    background-color: #053c5e;
+    justify-content: center;
+    align-items: center;
+    height: 44vw;
+    width: 30%;
+    color: white;
+    position: fixed;
+    left: 0;
+  }
+ 
+  /****************************/
+
+  .Schedule-Context {
+    margin-left: 50vw;
+    margin-top: 8vw;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    background-size:70%;
+    width: 110vw;
+    height: 37vw;
+    display: inline-flex;
+  }
+
+  .Schedule-Detail-part {
+    width: 80%;
+    font-size: 15px;
+    line-height: 5px;
+    color:black;
+    margin-left: 30vw;
+  }
+  .email {
+    float: left;
+  }
+
+  .phone {
+    float: right;
+  }
+
+  .Schedule-Calendar {
+   opacity: 1;
+  }
+
+  .react-calendar {
+    border-radius: 10px;
+    opacity: 0.8;
+
+  }
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+    color:black;
+  }
+
+  .Schedule-Form-Content{
+    margin-left: 5vw;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    opacity: 0.9;
+  }
+  .Schedule-Content{
+    display: inline-flex;
+    padding-top: 5vw;
+    margin-left: 10vw;
+  }
+}

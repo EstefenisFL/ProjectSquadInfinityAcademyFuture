@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen and (min-width: 1200px) {
+  .User-main {
+    display: inline-flex;
+    justify-content: flex-start;
+  }
+
+  .User-Heading {
+    display: flex;
+    flex-direction: column;
+    background-color: #053c5e;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 30%;
+    color: white;
+    position:fixed;
+    left: 0px;
+  }
+
+  .User-Heading h2 {
+    width: 100%;
+    padding: auto;
+    text-align: center;
+  }
+
+  .User-Heading hr {
+    width: 70%;
+    display: block;
+  }
+
+  .User-Context {
+    margin-left: 50vw;
+    background-color: rgb(255, 255, 255);
+    width: 80vw;
+  }
+
+  .User-Content {
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    width: 130%;
+    height: 100%;
+    margin-left: -200px;
+    padding-left: 30%;
+    padding-top: 20%;
+  }
+
+  .User-Content-elements {
+    height: 40vh;
+    width: 70%;
+    display: flex;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    margin-left: 150px;
+    padding-top: 30px;
+    padding-bottom: 180px;
+    top: 5;
+    margin-bottom: 6rem;
+  }
+
+  .User-Content-elements:first-child {
+    margin-top: 10vh;
+  }
+
+  .User-Photo-part {
+    width: 25%;
+    height: 20vh;
+    margin: 5px 30px 10px 0px;
+  }
+
+  .User-Photo-part img {
+    border-radius: 50%;
+  }
+
+  .User-Detail-part {
+    width: 80%;
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .user{
+    background:linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    margin-left: 50.44vw;
+    padding-left: 5vw;
+    padding-top: 10vw;
+    height: 45vw;
+    width: 100vw;
+  }
+}
