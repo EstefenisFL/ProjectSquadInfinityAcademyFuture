@@ -18,6 +18,10 @@ class UserListMain extends React.Component{
             console.log(response.data);
         }
 
+        async deleteUser(id) {
+            await api.actions.deleteUser(id); 
+        }
+
         
 
     render(){

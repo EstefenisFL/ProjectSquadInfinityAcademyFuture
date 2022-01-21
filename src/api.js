@@ -62,6 +62,12 @@ export default {
       console.log("Create User With Success", res);
       return res;
   }),
+  deleteUser: (id) =>
+    axios.delete('http://localhost:5000/api/v1/user/'+id).then((res) => {
+      console.log("User deleted!");
+      axios.get('http://localhost:5000/api')
+      return res.data;
+  }),
   }
 };
 
