@@ -57,8 +57,13 @@ export default {
       console.log("Get All Works", res.data);
       return res.data;
   }),
+  getUserById: (id) =>
+    axios.get('http://localhost:5000/api/v1/user/'+id).then((res) => {
+      console.log("Get All Works", res.data);
+      return res.data;
+  }),
   createUser: (data) =>
-    axios.post('http://localhost:5000/api/v1/user/', { data }).then((res) => {
+    axios.post('http://localhost:5000/api/v1/user/', data).then((res) => {
       console.log("Create User With Success", res);
       return res;
   }),
