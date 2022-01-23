@@ -67,6 +67,17 @@ export default {
       console.log("Create User With Success", res);
       return res;
   }),
+  deleteUser: (id) =>
+    axios.delete('http://localhost:5000/api/v1/user/'+id).then((res) => {
+      console.log("Delete User With Success", res);
+      return res;
+  }),
+  updateUser: (id, data) =>
+  axios.put('http://localhost:5000/api/v1/user/'+id, data).then((res) => {
+    console.log("Update User With Success", res.data);
+    return res.data;
+}),
+
   }
 };
 

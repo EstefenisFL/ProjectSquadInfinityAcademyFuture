@@ -17,6 +17,15 @@ class UserListMain extends React.Component{
             this.setState({ persons: response});
             console.log(response.data);
         }
+        async deleteUser(id) {
+            id = 6;
+            await api.actions.deleteUser(id);
+        }
+        async updateUser(id, data) {
+            const response = await api.actions.updateUser(id, data); 
+            this.setState({ persons: response});
+            console.log(response.data);
+        }
 
         
 
@@ -45,7 +54,9 @@ class UserListMain extends React.Component{
                         </p>
                     </li>
                 ))}
-                <Button onClick={this.getUser} primary style = {{marginLeft: "7vw"}}>Listar</Button>
+                <Button onClick={this.getUser} primary >Listar</Button>
+                <Button onClick={this.updateUser} primary >Editar</Button>
+                <Button onClick={this.deleteUser} color="red" >Deletar</Button>
                 </div>
             </div>
         )
