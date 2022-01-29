@@ -76,7 +76,7 @@ class ScheduleForm extends Component{
                     <label htmlFor="email" style = {{color: "white"}}>Email</label>
                     <input className="Schedule-Inputs"
                         type="email"
-                        id="email"
+                        id="username"
                         name="email"
                         placeholder="email"
                         value={this.state.data.email}
@@ -88,7 +88,7 @@ class ScheduleForm extends Component{
                     <label htmlFor="contact" style = {{color: "white"}}>Contato</label>
                     <input className="Schedule-Inputs"
                         type="contact"
-                        id="contact"
+                        id="username"
                         name="contact"
                         placeholder="contato"
                         value={this.state.data.contact}

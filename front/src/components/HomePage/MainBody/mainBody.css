@@ -1,66 +1,86 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-  @media only screen and (min-width: 1200px) {
-    .Main-Content{
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        width: 100%;
-        height: 200%;
-        position: absolute;
-        display: block;
-        left: 0.0rem;
-        z-index: 2;
-      }
-
-      .Above-Fold {
-        background: url('../../images/Background.png');
-        background-size: 140%;
-        background-attachment:initial;
-        background-repeat: no-repeat;
-        padding-top: 30%;
-        height: 100%;
-        width: 100%;
-        text-align: center;
-        color: white;
-        position:absolute;
-        font-size: larger;
-        z-index: 5;
-        display: block;
-      }
-
-      .Home-Branch-Box{
-        z-index: 5;
-        display: block;
-        width: 100%;
-        height: auto;
-        }
-
-      .Branch-Box-Heading {
-        color: rgb(44, 186, 44);
-        background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
-        border-radius: 6px;        
-        padding: 20px;
-        display: inline-block;
-        border-style: solid;
-        width: 50vw;
-        font-size: larger;
-        position: absolute;
-        top: 10%;
-        left: 14vw;
-        text-decoration: solid;
+@media only screen and (min-width: 900px) {
+  .Main-Content{
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      width: 100%;
+      height: 200%;
+      position: absolute;
+      display: block;
+      left: 0.0rem;
+      z-index: 2;
     }
 
-    /********************Announcement Home Page *********************/
-
-    .sectionMain {
+    .Above-Fold {
+      background: url('../../images/Background.png');
+      background-size: 140%;
+      background-attachment:initial;
+      background-repeat: no-repeat;
+      padding-top: 20%;
       height: 100%;
+      width: 100%;
+      text-align: center;
+      color: white;
+      position:absolute;
+      font-size: larger;
       z-index: 5;
-      padding-right: 750px;
-      padding-top: 0px;
-      display: flex;
-      position:relative; 
+      display: block;
     }
 
-    .month-Plan {
+    .Home-Branch-Box{
+      margin-left: 180px;
+      z-index: 5;
+      display: block;
+      width: 100%;
+      height: 700px;
+      }
+
+    .Branch-Box-Heading {
+      margin-left: 180px;
+      color: rgb(44, 186, 44);
+      background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
+      border-radius: 6px;        
+      padding: 20px;
+      display: inline-block;
+      border-style: solid;
+      width: 50vw;
+      font-size: larger;
+      position: absolute;
+      top: 10%;
+      left: 14vw;
+      text-decoration: solid;
+  }
+
+  /********************Announcement Home Page *********************/
+
+  .sectionMain {
+    height: 100%;
+    z-index: 5;
+    padding-right: 750px;
+    padding-top: 0px;
+    display: flex;
+    position:relative; 
+  }
+
+  .month-Plan {
+    padding-top: 10px;
+    padding-right: 0px;
+    display: inline-block;
+    border-style: solid;
+    background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
+    color: rgb(44, 186, 44);
+    width: 20vw;
+    height: 550px;
+    top: 0px;
+    left: 500px;
+    position: relative;
+    font-size: larger;
+    left: 25vh;
+    text-decoration: solid;
+    border-radius: 8px;
+  }
+
+  .annual-Plan {
       padding-top: 10px;
       padding-right: 0px;
       display: inline-block;
@@ -68,41 +88,90 @@
       background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
       color: rgb(44, 186, 44);
       width: 20vw;
-      height: 600px;
+      height: 553px;
       top: 0px;
-      left: 500px;
+      right: 510px;
       position: relative;
       font-size: larger;
-      left: 25vh;
+      left: 25vw;
       text-decoration: solid;
-      border-radius: 6px;
-    }
+      border-radius: 8px;
+  }
 
-    .annual-Plan {
-        padding-top: 10px;
-        padding-right: 0px;
-        display: inline-block;
-        border-style: solid;
-        background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
-        color: rgb(44, 186, 44);
-        width: 20vw;
-        height: 600px;
-        top: 0px;
-        right: 510px;
-        position: relative;
-        font-size: larger;
-        left: 25vw;
-        text-decoration: solid;
-        border-radius: 6px;
-    }
+  .Text-Box {
+    font-size: 40px;
+    color: #1b1b1be1;
+    border-radius: 8px;
+  }
 
-    .Text-Box {
-      font-size: 40px;
-      color: #1b1b1be1;
-    }
+  .listOne {
+    padding-top: 20px;
+    color: #1b1b1be1;
+  }
+
+  .listTwo {
+    padding-top: 20px;
+    color: #1b1b1be1;
+  }
+
+  .promo {
+    color: rgba(0, 119, 255, 0.774);
+    padding: 30px;
+  }
+
+  .bugMil {
+    color: rgba(0, 119, 255, 0.774);
+    padding: 30px;
+  }
+
+  .valorOne {
+    font-size: 40px;
+  }
+
+  .valorTwo {
+    font-size: 40px;
+  }
+
+  .txtVal {
+    padding-top: 8px;
+  }
+
+  .Info {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 15px;
+    border-style: solid;
+    height: 75px;
+    width: 18vw;
+    position: absolute;
+    color: rgba(0, 119, 255, 0.774);
+    border-radius: 8px;
+  }
+
+  .txtSaiba {
+    margin-left: 40px;
+  }
+
+  .benef {
+    margin-left: 3px;
+    color: rgb(14, 7, 7);
+    text-align:center;
+    
+  }
+
+  .valorClient {
+    margin-right: 340px;
+    border-style: solid;
+    border-radius: 8px;
+    color: rgb(44, 186, 44);
+    background-image: linear-gradient(to top, white, rgba(92, 179, 92, 0.556));
+  }
+
+  .description {
+    margin-right: 35px;
+  }
+
+  .headBen {
+    padding-top: 10px;
+  }
 }
-  
-  
-  
-  
-  
