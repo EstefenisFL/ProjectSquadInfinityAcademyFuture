@@ -31,10 +31,13 @@ class EditFormUser extends React.Component{
     onSubmit = () =>{
         this.props.submit(this.state.userData);
     }
+    resetForm = () => { 
+        document.getElementById("update-form").reset();
+      }
 
     render(){
         return(
-            <Form onSubmit={this.onSubmit} loading={this.state.loading} style = {{marginLeft: "-60vw", width:"25vw", marginTop:"10vw"}}>
+            <Form id="update-form" onSubmit={this.onSubmit} loading={this.state.loading} style = {{marginLeft: "-60vw", width:"25vw", marginTop:"10vw"}}>
                 <p style = {{color: "white", fontSize:"30px", marginLeft:"-12px"}}><strong>Marque o user para Editação</strong></p>
                 <Form.Field>
                     <label htmlFor="username" style = {{color: "white"}}>Name</label>
@@ -108,8 +111,8 @@ class EditFormUser extends React.Component{
                     />
                 </Form.Field>
 
-                <Button disabled={this.controlButton} onClick={() => this.onSubmit } primary style = {{marginLeft: "7vw"}}>Salvar</Button>
-
+                <Button disabled={this.controlButton} onClick={() => this.onSubmit } primary style = {{marginLeft: "5vw"}}>Salvar</Button>
+                <Button onClick={this.resetForm} secondary style = {{marginLeft: "1vw"}}>Reset</Button>
             </Form>
         );
     }
