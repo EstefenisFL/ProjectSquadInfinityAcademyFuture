@@ -51,8 +51,7 @@ class Apps extends Component{
         const { persons } = this.state;
         return(
         <div className="teste">   
-           <h1>List of Persons</h1> 
-           {console.log(persons)}
+           <h1>List of Persons</h1>
            {persons.map(person =>(
                <li key={person.id_user}>     
                 <h2>

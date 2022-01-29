@@ -77,7 +77,7 @@ class ContatoForm extends Component{
                     <input
                         className="Contact-Inputs"
                         type="email"
-                        id="email"
+                        id="username"
                         name="email"
                         placeholder="email"
                         value={this.state.data.email}
@@ -89,7 +89,7 @@ class ContatoForm extends Component{
                     <label htmlFor="contact" style = {{color: "white"}}>Contato</label>
                     <input className="Contact-Inputs"
                         type="contact"
-                        id="contact"
+                        id="username"
                         name="contact"
                         placeholder="contato"
                         value={this.state.data.contact}
@@ -97,7 +97,12 @@ class ContatoForm extends Component{
                     />
                     {this.state.errors.contact && <InlineError text={this.state.errors.contact}/>}
                 </Form.Field>
-                <Button primary className = "Enviar" style={{marginLeft: "8vw"}}>Enviar</Button>
+                <label htmlFor="contact" style = {{color: "white"}}>Mensagem</label>
+                <textarea>
+
+                </textarea>
+                
+                <Button primary className = "Enviar" style={{marginLeft: "8vw", marginTop:"1vw"}}>Enviar</Button>
                 <div className = "To-Signup-Schedule">Ainda não é cadastrado? <Link to="/signup">Cadastre-se aqui</Link></div>
             </Form>
         );

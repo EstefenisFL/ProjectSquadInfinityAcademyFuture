@@ -2,7 +2,7 @@ import React from 'react';
 import {Form,Button} from 'semantic-ui-react';
 import api from '../../api';
 
-class SignupForm extends React.Component{
+class EditFormUser extends React.Component{
     constructor(props){
         super(props);
         this.state={
@@ -14,25 +14,19 @@ class SignupForm extends React.Component{
                 "user_data_nasc":'',
                 "user_tel":''
             },
+            controlButton:true,
         }
         this.onChange=this.onChange.bind(this);
         this.onSubmit=this.onSubmit.bind(this);
+        this.controlButton=true;
     } 
     
-    
-    /* userData = {
-        name:'',
-        sexo:'',
-        endereco:'',
-        cpf:'',
-        dataNascimento: '',
-        telefone:'',
-    } */
 
     onChange = (e) =>{
         this.setState({
             userData:{...this.state.userData,[e.target.name]: e.target.value}
         })
+        this.controlButton=false;
     }
     onSubmit = () =>{
         this.props.submit(this.state.userData);
@@ -40,8 +34,8 @@ class SignupForm extends React.Component{
 
     render(){
         return(
-            <Form onSubmit={this.onSubmit} loading={this.state.loading} style = {{marginLeft: "55vw", width:"20vw"}}>
-                
+            <Form onSubmit={this.onSubmit} loading={this.state.loading} style = {{marginLeft: "-60vw", width:"25vw", marginTop:"10vw"}}>
+                <p style = {{color: "white", fontSize:"30px", marginLeft:"-12px"}}><strong>Marque o user para Editação</strong></p>
                 <Form.Field>
                     <label htmlFor="username" style = {{color: "white"}}>Name</label>
                     <input
@@ -114,11 +108,11 @@ class SignupForm extends React.Component{
                     />
                 </Form.Field>
 
-                <Button onClick={() => this.onSubmit } primary style = {{marginLeft: "7vw"}}>Signup</Button>
+                <Button disabled={this.controlButton} onClick={() => this.onSubmit } primary style = {{marginLeft: "7vw"}}>Salvar</Button>
 
             </Form>
         );
     }
 }
 
-export default SignupForm
+export default EditFormUser

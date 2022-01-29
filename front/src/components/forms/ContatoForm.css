@@ -10,10 +10,12 @@
     margin-top: -3vw;
   }
 
-  .Contact-Inputs {
-    width: 20vw;
-    height: 2vw;
-  }
+  #username{
+    border:0px;
+    border-radius: 2px;
+    height: 40px;
+
+  } 
   .Contact-title {
     margin-left: -1vw;
     border-top-left-radius: 8px;

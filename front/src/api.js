@@ -54,12 +54,12 @@ export default {
   actions: {
     getAllUsers: () =>
     axios.get('http://localhost:5000/api/v1/user/').then((res) => {
-      console.log("Get All Works", res.data);
+      console.log("Get All Works");
       return res.data;
   }),
   getUserById: (id) =>
     axios.get('http://localhost:5000/api/v1/user/'+id).then((res) => {
-      console.log("Get All Works", res.data);
+      console.log("Get All Works");
       return res.data;
   }),
   createUser: (data) =>
